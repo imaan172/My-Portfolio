@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #e9e0d7;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    height: 75vh;
+    border-radius: 15px;
+    padding: 2rem;
+    background: #e9e0d7;
+    animation: animate 1s linear infinite;
+    box-shadow: 0 0 50px palevioletred, 
+                0 0 50px paleturquoise;
+                 
+}
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
