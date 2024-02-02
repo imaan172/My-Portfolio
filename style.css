@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Gaegu:wght@300;400&family=Space+Mono:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background: #e9e0d7;
+    background: black;
+    font-family: 'Gaegu';
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.about-me__container {
+    color: whitesmoke;
 }
 
 .wrapper {
@@ -19,7 +31,7 @@ body {
     height: 75vh;
     border-radius: 15px;
     padding: 2rem;
-    background: #e9e0d7;
+    background: black;
     animation: animate 1s linear infinite;
     box-shadow: 0 0 50px palevioletred, 
                 0 0 50px paleturquoise;
