@@ -8,7 +8,11 @@ body {
     background: black;
     font-family: 'Gaegu';
 }
+.intro {
+    display: flex;
+    justify-content: center;
 
+}
 h1 {
     color: whitesmoke;
     text-align: center;
@@ -16,8 +20,15 @@ h1 {
 
 .about-me__container {
     color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
+.about-me__slide {
+    overflow: auto;
+}
 .wrapper {
     display: flex;
     justify-content: center;
@@ -25,17 +36,19 @@ h1 {
     height: 100vh;
 }
 .box {
-    display: flex;
-    justify-content: center;
     width: 100vh;
     height: 75vh;
     border-radius: 15px;
     padding: 2rem;
     background: black;
+    overflow: auto;
     animation: animate 1s linear infinite;
     box-shadow: 0 0 50px palevioletred, 
-                0 0 50px paleturquoise;
-                 
+                0 0 50px paleturquoise;                
+}
+h1 {
+    padding-bottom: 2rem;
+    padding-top: 0;
 }
 @keyframes animate {
     0% {
