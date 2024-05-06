@@ -3,39 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Gaegu:wght@300;400&family=Space+Mono:wght@700&display=swap" 
-rel="stylesheet">
     <title>Imaan Cooper</title>
 </head>
     <body>
-        <div class="wrapper">
-          <div class="box">
-            <span class="intro">
-              <h1>Hi, I'm Imaan</h1>
-            </span>
-            <div class="about-me__container">
-              <h3>Want to know more about me?</h3>
-              <span class="about-me__slide">
-                <p>I'm a 21-year-old coding enthusiast with a two-year love affair with Frontend Development. My coding journey has been a 
-                  rollercoaster of challenges and victories, and every line of code is a testament to my passion for creating seamless digital 
-                  experiences. When I'm not diving into the world of HTML, CSS, and JavaScript—occasionally wrestling with React—I'm either 
-                  tackling my latest coding conquest or bothering my adorable fur babies. <br>
-                  <br>
-                  Outside the realm of pixels and code, you'll catch me exploring the wonders of Mother Nature or curled up with a good book. 
-                  I have a soft spot for design, and while this portfolio might not fully showcase it, you can be sure that every project I 
-                  undertake is a canvas for my creativity. If you share a love for coding, design, or just a good laugh, I'd love to connect and 
-                  swap stories. Let's build something amazing together! </p>
-              </span>
+      <!-- Header -->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li>
+                <a href="#home" class="nav__link active-link">Hello</a>
+              </li>
+
+              <li>
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+
+              <li>
+                <a href="#cv" class="nav__link">CV</a>
+              </li>
+
+              <li>
+                <a href="#portfolio" class="nav__link">Portfolio</a>
+              </li>
+
+              <li>
+                <a href="#future" class="nav__link">Future Goals</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-fill"></i>
+            </div>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="main">
+       <!-- Home -->
+       <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="/images/IMG_0251.JPG" alt="ims logo" class="home__img">
+          <div class="home__data">
+            <h1 class="home__name">Imaan Cooper_</h1>
+            <p class="home__work">frontend developer</p>
+            <dl class="home__list">
+              <dt>AGE:</dt>
+              <dd>21</dd>
+              <dt>PHONE:</dt>
+              <dd>079 702 7491</dd>
+              <dt>EMAIL:</dt>
+              <dd>imaanc021@gmail.com</dd>
+              <dt>LOCATION:</dt>
+              <dd>Cape Town, South Africa</dd>
+            </dl>
+            <div class="home__socials">
+              <a href="https://github.com/imaan172" target="_blank" class="home__social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="www.linkedin.com/in/imaan-cooper-a5556720a" target="_blank" class="home__social-link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/imaancooper/" target="_blank" class="home__social-link">
+                <i class="ri-instagram-fill"></i>
+              </a>
             </div>
           </div>
         </div>
-        
-        
-        <footer>
+       </section>
+       <!-- Hello -->
+       <section class="hello section container">
+        <h2 class="section__title">
+          Hello_
+        </h2>
+        <p class="hello__details text-lg">
+          I am a freelance web developer with the ability to build captivating digital
+          experiences from the ground up - turning your vision into a reality.
+          Skilled at creating visually appealing designs, clean and efficient code and
+          user-friendly experiences. 
+          Fast learner, hard worker and can work well in a team as well as individually.
+        </p>
+        <a href="/images/imaan's updated CV.pdf" target="_blank"class="button button--flex text-sm">
+          <i class="ri-download-line"></i> DOWNLOAD CV
+        </a>
+       </section>
+      <!-- Services -->
+      <section class="sevices section container" id="services">
+        <h2 class="section__title">Services_</h2>
+        <div class="services__container grid">
+          <div class="services__item">
+            <div class="icon__box">
+             <img src="/images/icons/web-design.gif" alt="" class="services__icon">
+             <div class="services__dot">
+              <span class="dot">
+              </span>
+             </div>
+            </div>
+            <h3 class="servies__title text-lg">WEB DESIGN</h3>
+            <p class="services__details">Strong knack for web design - 
+              just give me a colour scheme and a theme.</p>
+          </div>
 
-        </footer>
+          
+            <div class="services__item">
+              <div class="icon__box">
+                <img src="/images/icons/web-dev.gif" alt="" class="services__icon">
+               <div class="services__dot">
+                <span class="dot">
+                </span>
+               </div>
+              </div>
+              <h3 class="servies__title text-lg">WEB DEVELOPMENT</h3>
+              <p class="services__details">With a strong foundation in web 
+                development, I'm ready to turn your vision into a
+                reality. Just tell me what you need, and I'll handle the 
+                rest.</p>
+            </div>
+
+            <div class="services__item">
+              <div class="icon__box">
+               <img src="/images/icons/mobile-apps.gif" alt="" class="services__icon">
+               <div class="services__dot">
+                <span class="dot">
+                </span>
+               </div>
+              </div>
+              <h3 class="servies__title text-lg">MOBILE APP DESIGN</h3>
+              <p class="services__details">Nothing beats a good looking mobile
+                app - just give me a colour scheme and a theme. </p>
+            </div>
+
+            <div class="services__item">
+              <div class="icon__box">
+               <img src="/images/icons/mobile-dev.gif" alt="" class="services__icon">
+               <div class="services__dot">
+                <span class="dot">
+                </span>
+               </div>
+              </div>
+              <h3 class="servies__title text-lg">MOBILE APP DEVELOPMENT</h3>
+              <p class="services__details">A different approach than web 
+                development - still the same result. Seamless, user-friendly 
+                and visually appealing. </p>
+            </div>
+
+            <div class="services__item">
+              <div class="icon__box">
+               <img src="/images/icons/responsive.gif" alt="" class="services__icon">
+               <div class="services__dot">
+                <span class="dot">
+                </span>
+               </div>
+              </div>
+              <h3 class="servies__title text-lg">RESPONSIVE DESIGN</h3>
+              <p class="services__details">Have your website across all devices
+                without flaw. </p>
+            </div>
+
+            <div class="services__item">
+              <div class="icon__box">
+               <img src="/images/icons/support.gif" alt="" class="services__icon">
+               <div class="services__dot">
+                <span class="dot">
+                </span>
+               </div>
+              </div>
+              <h3 class="servies__title text-lg">SUPPORT</h3>
+              <p class="services__details">Having troubles? No problem, pop me 
+                an email. </p>
+            </div>
+        </div>
+      </section>
+      </main>
+      <!-- JS -->
+      <script src="script.js"></script>
+       
 </body>
 </html>
